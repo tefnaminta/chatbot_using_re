@@ -1,0 +1,34 @@
+<chatter>:
+    ques:ques
+    ans:ans
+    BoxLayout:
+        orientation:"vertical"
+        Label:
+            id:ques
+            text:"it's me hana"
+            font_size:40
+        GridLayout:
+            orientation:"vertical"
+            padding:50
+            spacing:10
+            cols:1
+            row:4
+            TextInput:
+                id:ans
+                text:""
+                font_size:20
+            Button:
+                text:"Send"
+                font_size:20
+                on_press:root.textchat(ans.text)
+            Button:
+                text:"Exit"
+                font_size:20
+                on_press:root.exit()
+<bye>:
+    BoxLayout:
+        orientation:"vertical"
+        Label:
+            text:"Bye-Bye"
+
+
